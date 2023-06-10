@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>G-P-Menu</title>
+        <link rel="stylesheet" href="{% static 'styles/pages/menu_style.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/root.css' %}">
+    </head>
+    <body>
+        {% include 'nav.html' %}
+        {% for pizza in piz %}
+            <div class="item" style="text-align: center;">
+                <h2>{{pizza.name}}</h2>
+                <img src="{{pizza.image.url}}" alt="error" style="width:120px;height:120px;">
+                <p>{{pizza.description}}</p>
+                <h2>{{pizza.price}}</h2>
+                <hr>
+            </div>
+        {% endfor %}
+    </body>
+</html>

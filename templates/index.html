@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GalaxyPizza</title>
+        <link rel="stylesheet" href="{% static 'styles/pages/index_style.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/root.css' %}">
+    </head>
+    <body>
+        <main>
+            {% include 'nav.html' %}
+            <p class="home-text">Welcome to Galaxy Pizza Restaurant<br>
+                We are pleased that you have chosen us,<br>
+                and we hope to provide a satisfactory experience for all customers
+            </p>
+        </main>
+        <section class="most-popular-pizza">
+            <h2 class="title">Most popular pizza</h2>
+            <div>
+                <div class="pizza-photo pizza1"></div>
+                <h2 class="pizza-name">Almond cheese pizza</h2>
+                <p class="pizza-text">This pizza is full of surprising flavours,<br>
+                    as we use a very exclusive type of cheese as a secret ingredient and<br>
+                    a very unique taste that will take you to another world.
+                </p>
+                <hr>
+                <div class="pizza-photo pizza2"></div>
+                <h2 class="pizza-name">Oriental mushroom pizza</h2>
+                <p class="pizza-text">Oriental mushrooms are among the rarest types of breakfast,<br>
+                    and here we offer you an exclusive dish, which is a pizza saturated with<br>
+                    the flavor of oriental mushrooms that you will not find in any other pizza.
+                </p>
+                <hr>
+                <div class="pizza-photo pizza3"></div>
+                <h2 class="pizza-name">Arabic meat pizza</h2>
+                <p class="pizza-text">Arabic meat is one of the most demanded meats due to<br>
+                    its high quality and great benefits, so we offer you this product in a special way with<br>
+                    many and delicious layers of Arabic meat covered with cheese and prepared in<br>
+                    the best ways in order to get a unique and new flavor
+                </p>
+            </div>
+        </section>
+        <section class="our-restaurant-locations">
+            <div>
+                <h2 class="title">Our restaurant locations</h2>
+                <p class="text">Our branches are spread in general in most countries of the world,<br>
+                    where we have 100 branches distributed around the world,<br>
+                    where we have 3 branches in America, 3 in China, and 6 in Japan,<br>
+                    and you will always find us near you
+                </p>
+            </div>
+        </section>
+    </body>
+</html>
